@@ -309,6 +309,9 @@ for exe_file in *.exe; do
         echo "$text" | tail -n +3 >> ${new_assembly_file};
 
     done
+        #Remove .exe file
+    
+        rm "$exe_file"
 done
 ```
 The features for the classification are the frequency count of various opcode, registers, section size and the file size.
