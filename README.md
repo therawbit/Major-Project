@@ -134,7 +134,7 @@ for file in "$source_folder"/*.zip; do
     # Add file names and dates to the CSV file
     find "$extracted_dir/$folder_name" -type f -printf "%P,%TY-%Tm-%Td\n" >> "$csv_file"
     
-    # Delete non-.exe files in the extracted folder
+    # Delete non-.exe files in extracted folder
     find "$extracted_dir/$folder_name" -type f ! -name "*.exe" -delete
     
     # Delete the extracted zip file
